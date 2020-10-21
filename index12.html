@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+
+        }
+
+        .center_div {
+            width: 100vw;
+            height: 100vh;
+            background-color: #000;
+            place-items: center;
+            display: grid;
+        }
+
+        .instaLogo {
+            width: 15rem;
+            height: 15rem;
+            background: radial-gradient(circle, #eeaeca 10%,#111111 15%,#3f5efb 25%,#090979 30%,#fc466b 50%, #e994e6 100%);
+
+            border-radius: 3rem;
+        }
+
+        .squareLayer {
+            width: 11rem;
+            height: 11rem;
+            background-color: transparent;
+            border: 1 rem solid #fff;
+            border-radius: 50%;
+            position: relative;
+
+        }
+
+        .squareLayer ::after {
+            content: "";
+            width: 1rem;
+            height: 1rem;
+            background-color: #fff;
+            border: .15 rem solid #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 1rem;
+            right: 8rem;
+        }
+
+        .SquareLogo ::before {
+
+            content: "";
+            position: absolute;
+            width: 3.8rem;
+            height: 3.8rem;
+            background-color: transparent;
+            border-radius: 50%;
+            border: 1rem solid #fff
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center_div">
+        <div class="instaLogo">
+            <div class="square"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

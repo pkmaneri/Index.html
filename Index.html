@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+           
+        }
+        .center_div{
+            width: 50vw;
+            height: 100vh;
+            background-color: #1e1e1e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .wave{
+            width: 0.4rem;
+            height: 0.6rem;
+            background-color: #44bbcc;
+            margin: 00.4rem;
+            border-radius: 0.4rem;
+            animation: wave 1s linear infinite;
+            
+        }
+        @keyframes wave {
+           0%{
+               transform: scale(0);
+           }
+          50%{
+            transform: scale(1);
+          }
+           100%{
+            transform: scale(0);
+           }
+        }
+        .wave:nth-child(2){
+            animation-delay: 0.1s;
+        }
+        .wave:nth-child(3){
+            animation-delay: 0.2s;
+        }
+        .wave:nth-child(4){
+            animation-delay: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class ="center_div">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+    
+</body>
+</html>
+.SquareLogo ::before {
+
+    content: "";
+    position: absolute;
+    width: 3.8rem;
+    height: 3.8rem;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1rem solid #fff
+
+}
+
+.SquareLogo ::after {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #fff;
+    border: .15rem solid #fff;
+    position: absolute;
+    top: 1rem;
+    right: 8rem;
+}
